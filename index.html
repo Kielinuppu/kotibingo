@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>BINGO</h1>
+
+        <div id="aloitusNappiContainer">
+            <button id="aloitusNappi">ALOITA</button>
+        </div>
+
+        <div id="pelialue" class="hidden">
+            <div id="kuvaContainer">
+                <img id="arvottuKuva" alt="Arvottu kuva">
+                <div id="latausEfekti" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Arvotaan...</p>
+                </div>
+            </div>
+            <button id="seuraavaNappi">SEURAAVA KUVA</button>
+        </div>
+
+        <div id="arvotutKuvat">
+            <h2>ARVOTUT KUVAT:</h2>
+            <div id="arvotutKuvatContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
